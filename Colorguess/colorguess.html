@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="https://cdn.britannica.com/70/191970-050-1EC34EBE/Color-wheel-light-color-spectrum.jpg" type="image/x-icon">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha256-HkXXtFRaflZ7gjmpjGQBENGnq8NIno4SDNq/3DbkMgo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="colorguess.css">
+	<title>Color Guessing Game</title>
+</head>
+<body>
+	
+	<h1>
+		The Great 
+		<br>
+		<span id="colordisplay">RGB</span>
+		<br> 
+		Color Game
+	</h1>
+	<div id="displaybar">
+		<button id="reset">new colors</button>
+		<span id="message"></span>
+		<button id="easybtn">EASY</button>
+		<button id="hardbtn"class="selected">HARD</button>
+	</div>
+	<div class="rules">
+		<details>
+			<summary>HOW TO PLAY?<br>(Drop Me To Know)</summary>
+			<div>
+				<ul>
+					<li><i class="fas fa-paint-brush"></i> There's a combination of primary colors (<span id="red" style="color:rgb(145, 10, 10)">RED</span>,<span id="green" style="color:rgb(8, 66, 8)">GREEN</span>,<span id="blue" style="color:rgb(6, 6, 105);">BLUE</span>) respectively.</li>
+					<li><i class="fas fa-paint-brush"></i> Each one is associated with a number which depicts the portion of color used to make the combination (MAX-VALUE=255).</li>
+					<li><i class="fas fa-paint-brush"></i> Now you gotta test your color knowledge , and guess the right one.</li>
+					<li><i class="fas fa-paint-brush"></i> You can choose for EASY , HARD or NEW COLOR according to your convenience.</li>
+					<li><i class="fas fa-paint-brush"></i> Voilà ! lets get started. </li>
+				</ul>
+			</div>
+		</details>
+	</div>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+<script type="text/javascript" src="colorguess.js"></script>
+</body>
+</html>
